@@ -34,7 +34,7 @@ docker exec tcg_app php artisan migrate --seed
 
 
 ## 🧠 Core Features
-📊 Inventory & Costing
+### 📊 Inventory & Costing
 - Weighted‑average cost recalculation on every PO receipt
 
 - Inline stock adjustments
