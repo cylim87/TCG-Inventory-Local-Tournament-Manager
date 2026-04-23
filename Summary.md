@@ -16,8 +16,10 @@ docker exec tcg_app php artisan key:generate
 docker exec tcg_app php artisan migrate --seed
 # -> http://localhost:8080
 # -> admin@tcgshop.local / password
+```
 
 ---
+
 ## 📦 Project Structure
 
 | Layer | Files | Highlights |
@@ -30,92 +32,93 @@ docker exec tcg_app php artisan migrate --seed
 | **Blade Views** | 30 | Dark sidebar UI, CRUD pages, inline stock adjust, live PO totals (Alpine.js) |
 | **Docker** | 5 | Nginx, PHP‑FPM, MySQL, Redis, Mailpit |
 
-Core Features
+
+## 🧠 Core Features
 📊 Inventory & Costing
-Weighted‑average cost recalculation on every PO receipt
+- Weighted‑average cost recalculation on every PO receipt
 
-Inline stock adjustments
+- Inline stock adjustments
 
-Real TCG product data seeded
+- Real TCG product data seeded
 
-Carton‑level margin analysis:
+- Carton‑level margin analysis:
 
-Cost per unit
+ - Cost per unit
 
-MSRP
+ - MSRP
 
-Discount scenarios (5%–20%)
+ - Discount scenarios (5%–20%)
 
-Break‑even pricing
+ - Break‑even pricing
 
 🎮 Tournament Engine
-Swiss pairings with:
+- Swiss pairings with:
 
-Rematch avoidance
+  - Rematch avoidance
 
-Automatic bye assignment
+  - Automatic bye assignment
 
-Live standings
+  - Live standings
 
-Full DCI‑style tiebreakers:
+- Full DCI‑style tiebreakers:
 
-OMW%
+  - OMW%
 
-GWP%
+  - GWP%
 
-OGW%
+  - OGW%
 
 🧾 Purchase Orders
-Live PO total calculations (Alpine.js)
+- Live PO total calculations (Alpine.js)
 
-Atomic stock updates on receipt
+- Atomic stock updates on receipt
 
-Supplier management
+- Supplier management
 
 ⚡ Performance & Infrastructure
-Redis caching for standings & sessions
+- Redis caching for standings & sessions
 
-Queue‑ready architecture
+- Queue‑ready architecture
 
-Fully containerized dev environment
+- Fully containerized dev environment
 
 🖥️ Tech Stack
-Laravel 11
+- Laravel 11
 
-MySQL 8
+- MySQL 8
 
-Redis 7
+- Redis 7
 
-Nginx + PHP‑FPM
+- Nginx + PHP‑FPM
 
-Docker Compose
+- Docker Compose
 
-Alpine.js
+- Alpine.js
 
-Mailpit
+- Mailpit
 
 🧪 Seed Data Included
-3 users (admin + staff)
+- 3 users (admin + staff)
 
-4 suppliers
+- 4 suppliers
 
-19 card sets
+- 19 card sets
 
-18 real TCG products with stock
+- 18 real TCG products with stock
 
-24 players
+- 24 players
 
-Sample tournaments with rounds & pairings
+- Sample tournaments with rounds & pairings
 
-Perfect for demos, testing, or bootstrapping a real store setup.
+- Perfect for demos, testing, or bootstrapping a real store setup.
 
 📈 Roadmap
-[ ] Match result entry UI
+- [ ] Match result entry UI
 
-[ ] Player ELO / ranking system
+- [ ] Player ELO / ranking system
 
-[ ] Multi‑store support
+- [ ] Multi‑store support
 
-[ ] POS integration
+- [ ] POS integration
 
-[ ] Webhooks for Discord announcements
+- [ ] Webhooks for Discord announcements
