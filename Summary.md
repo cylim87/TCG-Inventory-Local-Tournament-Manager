@@ -51,7 +51,7 @@ docker exec tcg_app php artisan migrate --seed
 
  - Break‑even pricing
 
-🎮 Tournament Engine
+### 🎮 Tournament Engine
 - Swiss pairings with:
 
   - Rematch avoidance
@@ -68,7 +68,7 @@ docker exec tcg_app php artisan migrate --seed
 
   - OGW%
 
-🧾 Purchase Orders
+### 🧾 Purchase Orders
 - Live PO total calculations (Alpine.js)
 
 - Atomic stock updates on receipt
@@ -82,7 +82,9 @@ docker exec tcg_app php artisan migrate --seed
 
 - Fully containerized dev environment
 
-🖥️ Tech Stack
+---
+
+## 🖥️ Tech Stack
 - Laravel 11
 
 - MySQL 8
@@ -97,7 +99,9 @@ docker exec tcg_app php artisan migrate --seed
 
 - Mailpit
 
-🧪 Seed Data Included
+---
+
+## 🧪 Seed Data Included
 - 3 users (admin + staff)
 
 - 4 suppliers
@@ -112,7 +116,9 @@ docker exec tcg_app php artisan migrate --seed
 
 - Perfect for demos, testing, or bootstrapping a real store setup.
 
-📈 Roadmap
+---
+
+## 📈 Roadmap
 - [ ] Match result entry UI
 
 - [ ] Player ELO / ranking system
