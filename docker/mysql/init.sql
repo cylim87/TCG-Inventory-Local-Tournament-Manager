@@ -1,0 +1,3 @@
+CREATE DATABASE IF NOT EXISTS tcg_manager CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+GRANT ALL PRIVILEGES ON tcg_manager.* TO 'tcg_user'@'%';
+FLUSH PRIVILEGES;
