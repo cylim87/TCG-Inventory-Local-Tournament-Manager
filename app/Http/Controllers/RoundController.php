@@ -41,7 +41,7 @@ class RoundController extends Controller
         $this->pairingService->generatePairings($tournament, $round);
         $this->standingsService->clearCache($tournament);
 
-        return redirect()->route('rounds.show', [$tournament, $round])->with('success', "Round {$round->round_number} pairings generated.");
+        return redirect()->route('tournaments.rounds.show', [$tournament, $round])->with('success', "Round {$round->round_number} pairings generated.");
     }
 
     public function show(Tournament $tournament, TournamentRound $round)

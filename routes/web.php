@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\InventoryController;
 use App\Http\Controllers\PairingController;
@@ -10,11 +11,14 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\RoundController;
 use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\TournamentController;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 // Authentication
-Auth::routes(['register' => false]);
+Route::middleware('guest')->group(function () {
+    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/login', [LoginController::class, 'login']);
+});
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout')->middleware('auth');
 
 // Dashboard
 Route::middleware('auth')->group(function () {
